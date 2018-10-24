@@ -4,7 +4,7 @@ import pkg from './package.json';
 export default {
   input: './src/index.ts',
   plugins: [
-    babel({ extensions: ['.ts'], exclude: ['dist/**', 'node_modules/**'] }),
+    babel({ extensions: ['.ts', 'tsx'], exclude: ['dist/**', 'node_modules/**'] }),
   ],
   output: [
     { file: pkg.main, format: 'cjs' },
