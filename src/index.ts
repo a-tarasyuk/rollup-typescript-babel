@@ -1,3 +1,5 @@
+import { Counter } from './counter';
+
 export interface Props {
   x: number;
   y: number;
@@ -26,3 +28,9 @@ export class Value {
 
 new Value().setValue(1000);
 new Value().setProps({ x: 1000, y: 1000 });
+
+const counter = new Counter();
+counter.add();
+counter.add();
+counter.add();
+counter.getValue();

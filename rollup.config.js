@@ -1,10 +1,12 @@
+import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 
 export default {
   input: './src/index.ts',
   plugins: [
-    babel({ extensions: ['.ts', 'tsx'], exclude: ['dist/**', 'node_modules/**'] }),
+    resolve({ extensions: ['.js', '.jsx', '.ts', '.tsx'] }),
+    babel({ extensions: ['.ts', '.tsx'], include: ['src/**/*'] }),
   ],
   output: [
     { file: pkg.main, format: 'cjs' },

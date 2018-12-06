@@ -4,6 +4,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
