@@ -13,3 +13,4 @@ export class Counter {
     this.value = this.value - 1;
   }
 }
+

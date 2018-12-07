@@ -1,4 +1,6 @@
-import { Counter } from './counter';
+import { Counter } from './counter/counter';
+import { someHelpfulUtilFunction } from './util';
+
 
 export interface Props {
   x: number;
@@ -22,7 +24,7 @@ export class Value {
   }
 
   getProps(): Props {
-    return this.props;
+    return someHelpfulUtilFunction(this.props);
   }
 }
 
@@ -33,4 +35,9 @@ const counter = new Counter();
 counter.add();
 counter.add();
 counter.add();
+
+counter.getValue();
+
+counter.subtract();
+counter.subtract();
 counter.getValue();
