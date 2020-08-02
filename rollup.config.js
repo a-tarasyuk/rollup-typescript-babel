@@ -13,7 +13,7 @@ export default {
   input: './src/index.ts',
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
-  // https://rollupjs.org/guide/en#external-e-external
+  // https://rollupjs.org/guide/en/#external
   external: [],
 
   plugins: [
@@ -42,7 +42,7 @@ export default {
     format: 'iife',
     name,
 
-    // https://rollupjs.org/guide/en#output-globals-g-globals
+    // https://rollupjs.org/guide/en/#outputglobals
     globals: {},
   }],
 };
